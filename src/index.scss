@@ -180,7 +180,8 @@ code {
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
-  position: absolute;
+  position: fixed;
+  overflow: auto;
   width: 420px;
   right: 0;
   height: 100%;
@@ -199,6 +200,8 @@ code {
     overflow: auto;
   }
 }
+.drawer-items {
+}
 
 .menuTotalBlock {
   margin-bottom: 40px;
@@ -210,6 +213,25 @@ code {
     top: -4px;
     margin: 0 7px;
   }
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.cartItemImg {
+  height: 70px;
+  width: 70px;
+  // background-image: url('../public/img/sneakers/1.jpg');
+  background-size: contain;
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+  margin-right: 20px;
 }
 
 .cartTotalBlock {
@@ -254,24 +276,6 @@ code {
     margin-bottom: 20px;
   }
 
-  .cartItem {
-    display: flex;
-    align-items: center;
-    border: 1px solid #f3f3f3;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  .cartItemImg {
-    height: 70px;
-    width: 70px;
-    background-size: contain;
-    background-position: 0 10px;
-    background-repeat: no-repeat;
-    margin-right: 20px;
-  }
-
   .cartItem-item {
     display: flex;
     flex-direction: column;
@@ -302,6 +306,7 @@ code {
     flex: 1;
   }
 }
+
 .cartEmpty {
   display: flex;
   flex-direction: column;

@@ -56,5 +56,31 @@
     }
   ],
   "cart": [],
-  "favorite": []
+  "favorite": [
+    {
+      "title": "Мужские Кроссовки Nike Air Max 270",
+      "imagesUrl": "/img/sneakers/2.jpg",
+      "price": 12999,
+      "id": "2"
+    },
+    {
+      "title": "Мужские Кроссовки Nike Blazer Suede",
+      "imagesUrl": "/img/sneakers/3.jpg",
+      "price": 8499,
+      "id": "3"
+    }
+  ],
+  "orders": [
+    {
+      "items": [
+        {
+          "title": "Мужские Кроссовки Nike Blazer Suede",
+          "price": 8499,
+          "imagesUrl": "/img/sneakers/3.jpg",
+          "id": "3"
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
